@@ -1202,6 +1202,13 @@ header .container .form i {
     left: 30px;
 }
 
+@media (max-width: 575px) {
+    .email .container form i {
+        font-size: 14px;
+
+    }
+}
+
 .email .container form input[type="email"] {
     background: none;
     padding: 15px 10px 15px 40px;
@@ -1213,6 +1220,8 @@ header .container .form i {
 
 }
 
+
+
 .email .container form input[type="email"]::placeholder {
     color: white;
 }
@@ -1222,18 +1231,36 @@ header .container .form i {
     color: white;
     border: 1px solid white;
     border-left: none;
-
-
     padding: 15px 20px;
     outline: none;
 
+}
+
+@media (max-width: 575px) {
+    .email .container form input[type="email"] {
+        padding: 10px 10px 10px 40px;
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .email .container form input[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+
+    }
 }
 
 .email .container p {
     color: white;
     flex-basis: 50%;
     line-height: 2;
+    margin-left: 10px;
+}
 
+@media (max-width: 767px) {
+    .email .container p {
+        margin-left: 0;
+    }
 }
 
 /* End Email */
